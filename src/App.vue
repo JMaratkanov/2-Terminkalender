@@ -46,6 +46,7 @@
               <h5>Neuer Termin für: <strong>Montag</strong></h5>
             </div>
             <div class="card-body">
+              <!--Input text mit bootstrap form controll -->
               <input
                 type="text"
                 class="form-control"
@@ -57,6 +58,7 @@
                 <option value="1">Tief</option>
               </select>
               <div class="text-center mt-3">
+                <!-- Spans für Farbauswahl - d-inline-block -> damit man breite und höhe einstellen kann, m-0 außenabstände entfernt, außenabstand rechts = 2, square: unser style -->
                 <span
                   v-for="i in 5"
                   :key="i"
@@ -66,7 +68,7 @@
                 </span>
               </div>
               <hr />
-              <div class="d-grid gap-2">
+              <div class="d-grid gap-2"><!-- bootstrap display grid-->
                 <button class="btn btn-primary">Eintragen</button>
                 <button class="btn btn-danger">Inhalt löschen</button>
               </div>
@@ -78,8 +80,8 @@
       <div class="col-2 offset-2">
         <div class="float-end">
           <!-- Mit dem Button blenden wir die Calendar-Settings-Component ein bzw. aus. -->
-          <button class="btn btn-lg mb-2">
-            <i class="fas fa-cogs"></i>
+          <button class="btn btn-lg mb-2"> <!-- großer Button -->
+            <i class="fas fa-cogs"></i> <!-- Zahnrad icon-->
           </button>
         </div>
         <!-- Anfang: Template für die Calendar-Settings-Component -->
@@ -89,8 +91,8 @@
               <strong>Einstellungen</strong>
             </div>
             <div class="card-body">
-              <ul class="nav nav-pills nav-fill">
-                <li v-for="i in 2" :key="i" class="nav-item" role="button">
+              <ul class="nav nav-pills nav-fill"> <!-- nav und nav pills für abstände-->
+                <li v-for="i in 2" :key="i" class="nav-item" role="button"> <!-- nav items mit link--> 
                   <a class="nav-link"
                     ><i class="fas fa-icons text-success"></i
                   ></a>
