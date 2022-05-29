@@ -1,12 +1,12 @@
 <template>
-  <div class="container-fluid mt-5">
+  <div class="container-fluid mt-5">    <!-- container-fluid: Abstand links und rechts -->
     <div class="row">
-      <div class="col-12">
+      <div class="col-12">        <!-- Row besteht aus 12 Spalten - volle Bootstrapbreite -->
         <!-- Anfang: Template für die Calendar-Week-Component -->
         <div id="calender-week">
-          <div class="card-group">
-            <div class="card" v-for="i in 7" :key="i">
-              <div class="card-header text-center" role="button">
+          <div class="card-group">  <!-- Bootstrapklasse sorgt dafür, dass wir innerhalb dieses Divs mehrere Cards in einer Zeile erstellen können -->
+            <div class="card" v-for="i in 7" :key="i">    <!-- i in 7 führt 7x den gleichen inhalt aus, kex wird an das i gebunden weil es eine einzigartige Nr ist-->
+              <div class="card-header text-center" role="button"> <!-- durch role=button ändert sich der Cursor -->
                 <strong>Montag</strong>
               </div>
               <div class="card-body">
@@ -22,7 +22,7 @@
                       <div>Vue.js 3 lernen</div>
 
                       <div>
-                        <i class="fas fa-edit me-2" role="button"></i>
+                        <i class="fas fa-edit me-2" role="button"></i>  <!-- fontawwesome buttons, me = margin-end = außenabstand rechts 2 --> 
                         <i class="far fa-trash-alt" role="button"></i>
                       </div>
                     </div>
@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="row mt-3">
-      <div class="col-4 offset-4">
+      <div class="col-4 offset-4">  <!-- [][][][][X]X][X][X][][][X][X]-->
         <!-- Anfang: Template für die Calendar-Entry-Component -->
         <div id="calender-entry">
           <div class="card">

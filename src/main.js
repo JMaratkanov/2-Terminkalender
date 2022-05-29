@@ -1,5 +1,5 @@
 /*
-1) Node mit npm zusammen installieren
+1) Node mit npm zusammen installieren (node enthält npm)
 2) Vue Cli installieren: npm -install -g @vue/cli@4.5.13 oder npm -install -g @vue/cli
    im Visual Studio Code Terminal
 3) Neues leeres Projekt erstellen im Terminal:
