@@ -4,7 +4,8 @@
     <div class="card-group">
       <!-- Bootstrapklasse sorgt dafür, dass wir innerhalb dieses Divs mehrere Cards in einer Zeile erstellen können -->
      <!-- <calender-day  v-for="i in 7" :key="i"></calender-day> //statisch 7 mal die gleiche Komponente -->
-     <calender-day  v-for="day in calendarWeekData" :key="day.id"></calender-day>
+     <calender-day  v-for="day in calendarWeekData" :key="day.id" :day="day"></calender-day><!-- erstelle soviele calender-days wie es Elemente in unserem Array gibt 
+     und übergebe "day" (unser Attribut aus der Iteration) an props-Attribut day - in Komponente deklariert -->
     </div>
   </div>
 </template>
