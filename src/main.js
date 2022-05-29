@@ -54,7 +54,13 @@ ist ein single-file-component
 
 assets: Ort für statische Dateien
 
+Props: Datenkommunikation von Eltern Komponenten zu Kindkomponenten -> größere Anwendung - lieber Store benutzen, reaktiver Store von dem sich alle Komponent s ihre Daten holen können
 
+Store: Single SOurce of Truth - Alle Komponenten holen und Ändern ihre Daten hierauf basierend
+3Teile: state - die verwalteten Daten, Getters und Mutations für Zugriff, Eine Komponente möchte etwas ändern und ruft eine Mutation auf, diese kann die Daten validieren und dann den State ändern
+State geändert -> alle Components müssen informiert werden um ihr template zu aktualisieren -> passiert da der State zum ReactivitySystem von Vue hinzugefügt wird, rest übernimmt Framework
+
+Man kann einen eigenen Store nehmen oder vuex benutzen, was soein Store mit zusätzlichen Features ist
 */
 
 
